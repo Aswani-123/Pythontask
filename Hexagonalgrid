@@ -1,0 +1,12 @@
+from hexalattice.hexalattice import *
+import matplotlib.pyplot as plt
+
+# Get user input for the number of rows and columns
+ny = int(input("Enter the number of rows: "))
+nx = int(input("Enter the number of columns: "))
+
+# Create the hexagonal grid
+hex_centers, _ = create_hex_grid(nx=nx, ny=ny, do_plot=True)
+
+# Display the plot
+plt.show()
